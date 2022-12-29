@@ -57,7 +57,7 @@ router.post('/login', async(req,res)=>{
           role:user.role
         })
         decodeToken(token)
-        res.status(201).send({message:"Login Sucessfull",token})
+        res.status(200).send({message:"Login Sucessfull",token})
 
       }
       else
